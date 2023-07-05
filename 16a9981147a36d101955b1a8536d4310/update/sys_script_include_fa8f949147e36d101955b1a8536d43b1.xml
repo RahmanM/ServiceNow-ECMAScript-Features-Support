@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_293046_ecmascrip.ScratchPad</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ScratchPad</name>
+        <script><![CDATA[let ScratchPad = class ScratchPad {
+
+    // Sample arrow function
+    multiply = (a, b) => a * b;
+
+    // like let, const are working
+    blockVariables() {
+        let x = 1;
+        const y = 2;
+        return x + y;
+    }
+
+    templateLiterals(firstName, lastName) {
+        return `${firstName}, ${lastName}`;
+    }
+
+    destructuringAssignment(person) {
+        const {
+            name,
+            age
+        } = person;
+        return name;
+    }
+
+    spreadOperator(array1, array2) {
+        return [...array1, ...array2];
+    }
+
+    defaultParameter(parm = true) {
+        return parm;
+    }
+
+    restParameter(...theArgs) {
+        let total = 0;
+        for (const arg of theArgs) {
+            total += arg;
+        }
+        return total;
+    }
+
+    objectLiteralExtension(n, a) {
+        const name = n;
+        const age = a;
+        const person = {
+            name,
+            age
+        };
+        return person;
+    }
+
+    arrayFind(arg) {
+        const array = [1, 2, 3, 4];
+        return array.find(item => item == arg);
+    }
+
+    arrayFilter(arg) {
+        const array = [1, 2, 3, 4];
+        return array.filter(item => item == arg);
+    }
+
+    symbols(value) {
+        const value1 = Symbol(value);
+        const value2 = Symbol(value);
+
+        return (value1 === value2);
+    }
+
+    // This is not supported.
+    promises() {
+
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve('Data fetched successfully!');
+            }, 2000);
+        });
+    }
+
+    setDataStructure(value) {
+        const mySet = new Set([1, 2, 3]);
+        return mySet.has(value);
+    }
+
+
+    optionalChaining() {
+        const person = {
+            name: 'John',
+            age: 25,
+            address: {
+                city: 'New York',
+                country: 'USA'
+            }
+        };
+
+		return person?.jobs?.location; // return undefined instead of blowing and run time error
+    }
+
+	nullishCoalecing(name){
+		const displayName = name ?? 'Anonymous';
+		return displayName; // returns Anonymous
+	}
+
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-19 11:16:36</sys_created_on>
+        <sys_id>fa8f949147e36d101955b1a8536d43b1</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>ScratchPad</sys_name>
+        <sys_package display_value="EcmaScript 2021" source="x_293046_ecmascrip">16a9981147a36d101955b1a8536d4310</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="EcmaScript 2021">16a9981147a36d101955b1a8536d4310</sys_scope>
+        <sys_update_name>sys_script_include_fa8f949147e36d101955b1a8536d43b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-05 06:28:23</sys_updated_on>
+    </sys_script_include>
+</record_update>

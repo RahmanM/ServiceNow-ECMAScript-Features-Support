@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="EcmaScript 2021">51e9941147a36d101955b1a8536d43ad</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>SEPARATOR</link_type>
+        <map_page/>
+        <mobile_title>Global</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>1</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-19 10:50:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>19e9d4d147a36d101955b1a8536d439e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Global</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EcmaScript 2021" source="x_293046_ecmascrip">16a9981147a36d101955b1a8536d4310</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EcmaScript 2021">16a9981147a36d101955b1a8536d4310</sys_scope>
+        <sys_update_name>sys_app_module_19e9d4d147a36d101955b1a8536d439e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-19 10:50:40</sys_updated_on>
+        <timeline_page/>
+        <title>Global</title>
+        <u_graduation_date/>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EcmaScript 2021">16a9981147a36d101955b1a8536d4310</application>
+        <file_path/>
+        <instance_id>d750b348db60dfc00e785d00cf961966</instance_id>
+        <instance_name>dev50458</instance_name>
+        <name>sys_app_module_19e9d4d147a36d101955b1a8536d439e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="EcmaScript 2021">51e9941147a36d101955b1a8536d43ad</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>SEPARATOR</link_type><map_page/><mobile_title>Global</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order>1</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-19 10:50:40</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>19e9d4d147a36d101955b1a8536d439e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Global</sys_name><sys_overrides/><sys_package display_value="EcmaScript 2021" source="x_293046_ecmascrip">16a9981147a36d101955b1a8536d4310</sys_package><sys_policy/><sys_scope display_value="EcmaScript 2021">16a9981147a36d101955b1a8536d4310</sys_scope><sys_update_name>sys_app_module_19e9d4d147a36d101955b1a8536d439e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-19 10:50:40</sys_updated_on><timeline_page/><title>Global</title><u_graduation_date/><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1236949452</payload_hash>
+        <record_name>Global</record_name>
+        <reverted_from/>
+        <source>5aa9981147a36d101955b1a8536d4312</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-19 10:50:40</sys_created_on>
+        <sys_id>d9e9d4d147a36d101955b1a8536d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>188d3473b6d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-19 10:50:40</sys_updated_on>
+        <type>Module</type>
+        <update_guid>dde9d4d1e2a36d102ffcc699cb2403a0</update_guid>
+        <update_guid_history>dde9d4d1e2a36d102ffcc699cb2403a0:-1236949452</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Global">bd3ffd5e477361101955b1a8536d4373</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-05 07:02:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>b75e1459074f4c3a94624e2fb9588c29</sys_id>
+        <sys_metadata>19e9d4d147a36d101955b1a8536d439e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Global</sys_name>
+        <sys_package display_value="EcmaScript 2021" source="x_293046_ecmascrip">16a9981147a36d101955b1a8536d4310</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="EcmaScript 2021">16a9981147a36d101955b1a8536d4310</sys_scope>
+        <sys_scope_delete display_value="">5fd5b97590d740d6acc5c26e4bc558b9</sys_scope_delete>
+        <sys_update_name>sys_app_module_19e9d4d147a36d101955b1a8536d439e</sys_update_name>
+        <sys_update_version display_value="sys_app_module_19e9d4d147a36d101955b1a8536d439e">d9e9d4d147a36d101955b1a8536d43a1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-05 07:02:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

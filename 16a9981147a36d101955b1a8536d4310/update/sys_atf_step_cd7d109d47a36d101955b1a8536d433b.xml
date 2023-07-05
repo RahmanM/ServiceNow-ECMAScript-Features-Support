@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Run Server Side Validation Script</description>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes>Validate ES2021 features</notes>
+        <order>1</order>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-19 11:09:04</sys_created_on>
+        <sys_id>cd7d109d47a36d101955b1a8536d433b</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="EcmaScript 2021" source="x_293046_ecmascrip">16a9981147a36d101955b1a8536d4310</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EcmaScript 2021">16a9981147a36d101955b1a8536d4310</sys_scope>
+        <sys_update_name>sys_atf_step_cd7d109d47a36d101955b1a8536d433b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-05 07:00:14</sys_updated_on>
+        <table/>
+        <test display_value="Ecmascript Samples Test">b64d585d47a36d101955b1a8536d43c7</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=cd7d109d47a36d101955b1a8536d433b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>cd7d109d47a36d101955b1a8536d433b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-19 11:09:04</sys_created_on>
+        <sys_id>3a1e58dd47a36d101955b1a8536d4338</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-05 07:00:14</sys_updated_on>
+        <value>(function(outputs, steps, params, stepResult, assertEqual) {&#13;
+&#13;
+    describe('Validate ES2021 features', function() {&#13;
+&#13;
+		// Validate inheritance is working&#13;
+        it('Inheritance is working', function() {&#13;
+            let animal = new x_293046_ecmascrip.Dog("Dog");&#13;
+            let name = animal.getName();&#13;
+            expect(name).toBe("Dog");&#13;
+        });&#13;
+&#13;
+		// Validate arrow functions are working&#13;
+        it('Arrow functions is working', function() {&#13;
+            let pad = new x_293046_ecmascrip.ScratchPad();&#13;
+            var result = pad.multiply(2,2);&#13;
+            expect(result).toBe(4);&#13;
+        });&#13;
+&#13;
+        it('Block variable constants are working', function() {&#13;
+            let pad = new x_293046_ecmascrip.ScratchPad();&#13;
+            let result = pad.blockVariables();&#13;
+            expect(result).toBe(3);&#13;
+        });&#13;
+&#13;
+		it('String interpolation and template laterals is working', function() {&#13;
+            let pad = new x_293046_ecmascrip.ScratchPad();&#13;
+            var result = pad.templateLiterals('rahman', 'mahmoodi');&#13;
+            expect(result).toBe('rahman, mahmoodi');&#13;
+        });&#13;
+&#13;
+		it('Destructuring assignment is working', function() {&#13;
+            let pad = new x_293046_ecmascrip.ScratchPad();&#13;
+&#13;
+			const person = { name: 'John', age: 30, profession: 'Developer'}; &#13;
+            var result = pad.destructuringAssignment(person);&#13;
+            expect(result).toBe('John');&#13;
+        });&#13;
+&#13;
+		it('Spread operator is working', function() {&#13;
+            let pad = new x_293046_ecmascrip.ScratchPad();&#13;
+&#13;
+			const array1 = [1,2,3];&#13;
+			const array2 = [4,5,6];&#13;
+&#13;
+            var result = pad.spreadOperator(array1, array2);&#13;
+            expect(result.length).toBe(6);&#13;
+        });&#13;
+&#13;
+        it('Default parameter is working', function() {&#13;
+            let pad = new x_293046_ecmascrip.ScratchPad();&#13;
+&#13;
+            var result = pad.defaultParameter(); // not passing any value and getting default parm&#13;
+            expect(result).toBe(true);&#13;
+        });&#13;
+&#13;
+        it('Rest parameter is working', function() {&#13;
+            let pad = new x_293046_ecmascrip.ScratchPad();&#13;
+&#13;
+            var result = pad.restParameter(1,2,3); &#13;
+            expect(result).toBe(6);&#13;
+        });&#13;
+&#13;
+        it('Object literal extension is working', function() {&#13;
+            let pad = new x_293046_ecmascrip.ScratchPad();&#13;
+&#13;
+            var result = pad.objectLiteralExtension("John", 25); &#13;
+            expect(result.name).toBe("John");&#13;
+        });&#13;
+&#13;
+        it('Array find is working', function() {&#13;
+            let pad = new x_293046_ecmascrip.ScratchPad();&#13;
+&#13;
+            var result = pad.arrayFind(1); &#13;
+            expect(result).toBe(1);&#13;
+        });&#13;
+&#13;
+        it('Array filter is working', function() {&#13;
+            let pad = new x_293046_ecmascrip.ScratchPad();&#13;
+&#13;
+            var result = pad.arrayFilter(1); &#13;
+            expect(result.length).toBe(1); // filter returns an array&#13;
+        });&#13;
+&#13;
+        it('Symbols is working', function() {&#13;
+            let pad = new x_293046_ecmascrip.ScratchPad();&#13;
+&#13;
+            var result = pad.symbols(1,1); &#13;
+            expect(result).toBe(false); // 1 is not equal 1 in symbol&#13;
+        });&#13;
+&#13;
+         it('Set is working', function() {&#13;
+            let pad = new x_293046_ecmascrip.ScratchPad();&#13;
+&#13;
+            var result = pad.setDataStructure(1); &#13;
+            expect(result).toBe(true); // set has 1 in so should return true&#13;
+        });&#13;
+&#13;
+        it('Optional chaining is working', function() {&#13;
+            let pad = new x_293046_ecmascrip.ScratchPad();&#13;
+&#13;
+            var result = pad.optionalChaining(); &#13;
+            expect(result).toBe(undefined); // return undefined instead of throwing error&#13;
+        });&#13;
+&#13;
+		it('Nullish Coalescing Operator', function() {&#13;
+            let pad = new x_293046_ecmascrip.ScratchPad();&#13;
+&#13;
+            var result = pad.nullishCoalecing(null); &#13;
+            expect(result).toBe('Anonymous'); // Returns Anonymous as input is falsy&#13;
+&#13;
+			result = pad.nullishCoalecing('Rahman'); &#13;
+            expect(result).toBe('Rahman'); // Returns Rahman as input is falsy&#13;
+        });&#13;
+&#13;
+    });&#13;
+&#13;
+})(outputs, steps, params, stepResult, assertEqual);&#13;
+// uncomment the next line to execute this script as a jasmine test&#13;
+jasmine.getEnv().execute();</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>cd7d109d47a36d101955b1a8536d433b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-19 11:09:04</sys_created_on>
+        <sys_id>fe1e58dd47a36d101955b1a8536d4337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-19 11:09:04</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+</record_update>
